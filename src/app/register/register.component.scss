@@ -4,9 +4,9 @@
 
 html,
 body {
-  //   background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
-  //   background-size: cover;
-  //   background-repeat: no-repeat;
+  //background-image: url ('../../assets/sd.jpg');
+  //background-size: cover;
+  //background-repeat: no-repeat;
   height: 100%;
   font-family: 'Numans', sans-serif;
 }
@@ -14,7 +14,7 @@ body {
 .logo-container {
   width: 50%;
   margin: auto;
-  margin-top: -48px;
+  margin-top: -20px;
   margin-bottom: 10px;
 
   img {
@@ -25,24 +25,25 @@ body {
 .container-fluid {
   //   height: 100%;
   //   background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
-  background-image: url('../../assets/classroom.jpg');
+  background-image: url("../../assets/123.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   align-content: center;
 }
 
 .card {
-  margin-top: 56px;
-  margin-bottom: 30px;
-  width: 400px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 373px;
   //   background-color: rgba(0, 0, 0, 0.5) !important;
-  background-color: rgba(76, 11, 11, 0.88) !important;
+  background-color: rgba(64, 74, 75, 0.88) !important;
 }
 
 .social_icon span {
-  font-size: 60px;
+  font-size: 40px;
   margin-left: 10px;
-  color: #32f9dd;
+  margin-top: 50px;
+  color: #069258;
 }
 
 .social_icon span:hover {
@@ -62,7 +63,7 @@ body {
 
 .input-group-prepend span {
   width: 50px;
-  background-color: rgb(67, 54, 184);
+  background-color: rgb(2, 126, 78);
   color: black;
   border: 0 !important;
 }
@@ -102,4 +103,71 @@ input:focus {
 
 .links a {
   margin-left: 4px;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgb(63, 145, 104);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(19px, 0);
+  }
 }

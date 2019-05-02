@@ -1,20 +1,20 @@
 /* Made with love by Mutiullah Samim*/
 
-@import url('https://fonts.googleapis.com/css?family=Numans');
+@import url("https://fonts.googleapis.com/css?family=Numans");
 
 html,
 body {
-  background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+  background-image: url('../../assets/276-4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-  font-family: 'Numans', sans-serif;
+  font-family: "Numans", sans-serif;
 }
 
 .logo-container {
   width: 50%;
   margin: auto;
-  margin-top: -48px;
+  margin-top: -20px;
   margin-bottom: 10px;
 
   img {
@@ -28,16 +28,17 @@ body {
 }
 
 .card {
-  margin-top: 56px;
-  margin-bottom: auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
   width: 400px;
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
 .social_icon span {
-  font-size: 60px;
+  font-size: 40px;
   margin-left: 10px;
-  color: #e0c320;
+  margin-top: 50px;
+  color: #03b671;
 }
 
 .social_icon span:hover {
@@ -57,7 +58,7 @@ body {
 
 .input-group-prepend span {
   width: 50px;
-  background-color: #FFC312;
+  background-color: #06b35c;
   color: black;
   border: 0 !important;
 }
@@ -65,7 +66,6 @@ body {
 input:focus {
   outline: 0 0 0 0 !important;
   box-shadow: 0 0 0 0 !important;
-
 }
 
 .remember {
@@ -81,7 +81,7 @@ input:focus {
 
 .login_btn {
   color: black;
-  background-color: #FFC312;
+  background-color: #07944d;
   width: 100px;
   cursor: pointer;
 }
@@ -97,4 +97,71 @@ input:focus {
 
 .links a {
   margin-left: 4px;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: rgb(251, 255, 253);
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(19px, 0);
+  }
 }
